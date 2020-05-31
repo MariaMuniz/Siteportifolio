@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      
+      <title>Potfolio M M</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+      <!-- CSS do Bootstrap (obrigatório) -->
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <meta charset="utf-8">
+     <meta http-equiv=”content-type” content="text/html;" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="keywords" content="portfolio TI, TI, freelancer, freelancer BH, app, site, desenvolvimento app, desenvolvimento site, freelancer app, freelancer site" />
+  
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="estiloteste1.css">
+    <script src="portifolio2.js"></script>
+    <link rel="stylesheet" href="estiloportifolio3.css">
+ 
+    
+      <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"/></script>
+   
+<script>
+  
+  jQuery(document).ready(function ($) {
+
+  $('#checkbox').change(function(){
+    setInterval(function () {
+        moveRight();
+    }, 3000);
+  });
+  
+  var slideCount = $('#slider ul li').length;
+  var slideWidth = $('#slider ul li').width();
+  var slideHeight = $('#slider ul li').height();
+  var sliderUlWidth = slideCount * slideWidth;
+  
+  $('#slider').css({ width: slideWidth, height: slideHeight });
+  
+  $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+  
+    $('#slider ul li:last-child').prependTo('#slider ul');
+
+    function moveLeft() {
+        $('#slider ul').animate({
+            left: + slideWidth
+        }, 200, function () {
+            $('#slider ul li:last-child').prependTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    function moveRight() {
+        $('#slider ul').animate({
+            left: - slideWidth
+        }, 200, function () {
+            $('#slider ul li:first-child').appendTo('#slider ul');
+            $('#slider ul').css('left', '');
+        });
+    };
+
+    $('a.control_prev').click(function () {
+        moveLeft();
+    });
+
+    $('a.control_next').click(function () {
+        moveRight();
+    });
+
+});    
+
+</script>
+
+  </head>
+      
+
+    
+   <body>
+      <div class="container">
+         <div class="row">
+            <div class="col-xs-12">
+               
+<header id="header">
+  <div class="main_nav">
+    <div class="container">
+      <div class="mobile-toggle"> <span></span> <span></span> <span></span> </div>
+      <nav>
+        <ul>
+          <li><a class="smoothscroll" href="#header">Home</a></li>
+          <li><a class="smoothscroll" href="#about">Sobre</a></li>
+          <li><a class="smoothscroll" href="#app">Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+<div class="title">
+<div class="main">
+            <div class="object1">
+                <img src="img para site/m.png" height="200px" width="150px"/>
+            </div>
+            <div class="object2">
+                <img src="img para site/m.png"/>
+            </div>
+            <div class="object3">
+                <img src="img para site/m.png" height="350px" width="350px"/>
+            </div>
+            
+            <div class="layer">
+                <div class="cola">
+                    Maria
+                    <div class="zero">
+                        Muniz
+                    </div>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+</div>
+
+    <a class="smoothscroll" href="#about">
+    <div class="mouse">
+      <div class="wheel"></div>
+    </div>
+    </a> </div>
+    ///
+  <a class="smoothscroll" href="#about">
+  <div class="scroll-down"></div>
+  </a> </header>
+         </div>
+ <!-- linha -->
+         <div class="row">
+            <div class="col-xs-4">
+   <h1>O que gosto de fazer</h1>
+      <div class="block2">
+        <div class="eleven columns"> <div class="texto100"><h6>Gosto de investir no aprendizado e na evolução profissional. Buscando sempre me aperfeiçoar para desempenhar um bom trabalho. Procuro sempre colaborar com  as equipes de trabalho, desempenhando com responsabilidade minha profissão. </h6></div>
+         <div class="eleven columns">
+          <figure>
+       <div class="info"><img src="img para site/info5.png"></figure>
+          </div>
+ 
+     </div>
+   
+     </div>
+  </div>
+  </div>
+
+            </div>
+            <div class="col-xs-4">
+               <section id="app">
+  <div class="container">
+     <div class="row">
+      <div class="eleven columns">
+      <div class="content37">
+<h1 style="text-align:center;">Portfolio</h1></div>
+      <div class="texto101">
+    <h3>O Projeto CHB Saúde</h3>
+    </div>
+      <div class="block21">
+        <div class="texto102"><h6>A CHB Saúde é lider no ramo de seguros e planos de saúde. O projeto seria criar uma solução digital para a cotação de planos online. </h6></div>
+
+ <div class="texto102"><h4>Metodologia</h4></div>
+</div>
+ 
+ <div class="metod"><img src="img para site/metoapp.png"></div>
+
+ <div class="img_metod"><div class="metod2"><img src="img para site/text2.png"></div></div>
+
+  <div class="container">
+     <div class="row">
+       <div class=" "><div class="six columns"><h4> O Aplicativo</h4> <br>
+       
+        <h6>Não é de hoje que a tecnologia tem ajudado nos avanços da vida moderna.
+Para se fazer a cotação de planos de saúde de maneira  mais rápida foi criado o app CHB Saúde.<p>
+Com ele vc pode fazer:<p>
+ ⦁Cotação na hora de diversos tipos de planos;<br>
+ ⦁Cotação para cada faixa etária com as melhores operadoras do país;<br>
+ ⦁Busca de rede credenciada de acordo com cada plano e operadora;<br>
+ ⦁Consultar carências e coberturas.<br>
+ ⦁Além de disponibilizar pdf de cada operadora para maiores informações.</h6></div></div>
+
+        <div class="six columns">
+              <div class="content35"><img src="img para site/img34.png"></div>
+            <div style="z-index: 999;">
+    <a href="https://play.google.com/store/apps/details?id=com.muniz.maria.chbsaude3"><img src="img para site/google-play-badge.png"></a>
+            <br>
+             <br>
+                   </div>
+</div></div>
+</section>
+
+            </div>
+            <div class="col-xs-12">
+             <section id="imgfundo">
+
+</section>
+            </div>
+         </div>
+ <!-- linha -->
+         <div class="row">
+            <div class="col-xs-12">
+          <section id="web">
+   <div class="container">
+     <div class="row">
+       <div class="twelve columns">
+       <div class="content37"><h1>Projetos Web</h1></div></div>
+      <div class="content34">
+      <div><h3>Projeto Cardlet</h3></div></div>
+      <div class="block21 content34">
+
+        <div class="eleven columns centraliza"><h6>Cardlet, um aplicativo de cartão de visita online desejava
+     a  criação um web site em HTML E CSS para divulgar e informar sobre seu aplicativo</h6></div>
+        <br>
+       <br>
+
+ 
+   </div>
+ </div>
+
+   <div class="screen">
+  <div class="container_slide">
+
+ <div class="container">
+  <img class='photo'  src="imgslide/img001.png" alt="" />
+  <img class='photo'  src="imgslide/img002.png" alt="" />
+  <img class='photo'  src="imgslide/img003.png" alt="" />
+  <img class='photo'  src="imgslide/img005.png" alt="" />
+
+</div>
+
+ </div>
+  </div>
+   </div>
+  </div>
+
+            </div>
+            <div class="col-xs-12">
+               <section id="contato">
+             
+   <div class="pag"><h3>Página curriculo para o git</h3></div>
+  </div>
+</section>
+            </div>
+            <div class="col-md-4 col-sm-12">
+               <section id="final">
+
+<!-- Footer -->
+    <footer class="text-center">
+        <div class="footer-above">
+            <div class="container">
+                <div class="row">
+                    <div class="four columns">
+                        <h3>Localização</h3>
+                        <p>Belo Horizonte<br>Minas Gerais <br>Brasil</p>
+                    </div>
+                    <div class="four columns ">
+                        <h3>Connect comigo</h3>
+                        <ol>
+                            <li>
+                              <a href="https://www.instagram.com/?hl=pt-br"class="btn-social btn-outline" target="__blank"><img src="img para site/instagram.png"></a>
+                            </li>  
+                            <li>
+                                <a href="https://linkedin.com/in/maria-muniz-/"class="btn-social btn-outline" target="__blank"><img src="img para site/linkedin3.png"></a>
+                            </li>
+                             <li>
+                                <a href="https://github.com/MariaMuniz"class="btn-social btn-outline" target="__blank"><img src="img para site/github2.png"></a>
+                            </li>
+                          
+                        </ol>
+                    </div>
+                    <div class="four columns">
+                        <h3>Minha citação favorita</h3>
+                        
+                        <p>Há três métodos para ganhar sabedoria: primeiro, por reflexão, que é o mais nobre; segundo, por imitação, que é o mais fácil; e terceiro, por experiência, que é o mais amargo. Confúcio</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-below">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                      Copyright &copy; <a href="https://github.com/MariaMuniz/Siteportifolio" target="__blank">Maria Muniz</a> 2019
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </section>
+
+        <script type="text/javascript">
+         var object1=$('.object1'),
+      object2=$('.object2'),
+      object3=$('.object3'),
+      layer=$('.layer');
+        
+   layer.mousemove(function(e) {
+      var valueX=(e.pageX * -1 / 12); 
+      var valueY=(e.pageY * -1 / 12); 
+            
+    object1.css({
+         'transform':'translate3d('+valueX+'px,'+valueY+'px,0) rotate(20deg)'
+            });
+        });
+        
+        layer.mousemove(function(e){
+           var valueX=(e.pageX * -1 / 15); 
+           var valueY=(e.pageY * -1 / 20); 
+            
+            object2.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0)'
+            });
+        });
+        
+        layer.mousemove(function(e){
+           var valueX=(e.pageX * -1 / 15); 
+           var valueY=(e.pageY * -1 / 15); 
+            
+            object3.css({
+                'transform':'translate3d('+valueX+'px,'+valueY+'px,0) rotate(-20deg)'
+            });
+        });
+
+</script>
+            </div>
+         </div>
+      </div>
+       
+ 
+      <!-- jQuery (obrigatório caso você use o Javascript do Bootstrap) 
+      <script src="<a class="vglnk" href="https://code.jquery.com/jquery.js" rel="nofollow"><span>https</span><span>://</span><span>code</span><span>.</span><span>jquery</span><span>.</span><span>com</span><span>/</span><span>jquery</span><span>.</span><span>js</span></a>"></script>-->
+       
+      <!-- Javascript do Bootstrap (opcional) 
+      <script src="js/bootstrap.min.js"></script>-->
+   </body>
+</html>
